@@ -1,0 +1,8 @@
+# Pretty URLs for your pages
+/blog      /blog.html       200
+/privacy   /privacy.html    200
+/about     /AboutUs.html    200
+/terms     /Term&condtion.html   200
+
+# Optional: SPA-style fallback for any other deep links
+/*         /index.html      200
