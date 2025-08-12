@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doppelganster Navigation</title>
+  <style>
+    :root {
+      --accent: #3b82f6;
+      --muted: #6b7280;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      margin-bottom: 18px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #021328;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .muted {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo">DG</div>
+      <div>
+        <div class="title">Doppelganster</div>
+        <div class="muted">Find your look-alike. Share the stories.</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      
+    </nav>
+  </header>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Doppelganger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0b1220;
+            color: #e0e0e0;
+        }
+        header {
+            background: #0b1220;
+            color: #fff;
+            padding: 20px 10%;
+            text-align: center;
+            border-bottom: 2px solid #1a2335;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #121b2f;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        h1 {
+            border-bottom: 2px solid #1a2335;
+            padding-bottom: 10px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            background: #0b1220;
+            color: #aaa;
+            border-top: 2px solid #1a2335;
+            margin-top: 30px;
+        }
+        a {
+            color: #4da3ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Us – Doppelganger</h1>
+</header>
+
+<main>
+    <section>
+        <p><strong>Doppelganger</strong> is a creative platform where people can share, explore, and enjoy finding their look-alikes from around the world. Whether it’s for fun, curiosity, or connecting with others, our mission is to make the process of discovering your “other self” enjoyable, secure, and user-friendly.</p>
+    </section>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>We aim to blend technology, creativity, and community to give everyone the thrill of finding someone who looks just like them. By combining advanced facial recognition tools with a global image-sharing network, we create a unique experience unlike any other.</p>
+    </section>
+
+    <section>
+        <h2>What We Offer</h2>
+        <ul>
+            <li>A fun and engaging way to find your doppelganger.</li>
+            <li>Secure and fast image uploads via our trusted cloud hosting partner.</li>
+            <li>A gallery showcasing look-alikes from all over the world.</li>
+            <li>Opportunities for rewards, contests, and community events.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Privacy First</strong> – Your images and data are protected with care.</li>
+            <li><strong>Creativity</strong> – Encouraging self-expression and fun in discovering similarities.</li>
+            <li><strong>Community</strong> – Connecting people across borders through shared curiosity.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>Have questions, feedback, or partnership ideas? We’d love to hear from you!</p>
+        <p>Email us at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+</main>
+
+<footer>
+    &copy; <span id="year"></span> Doppelganger. All rights reserved.
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
