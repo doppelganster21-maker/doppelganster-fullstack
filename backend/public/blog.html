@@ -1,119 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doppelganster Blog – Real Stories & Insights</title>
 
-<title>Doppelganger Blog – Myths, Science & Real Look-Alike Stories</title>
-
-<!-- SEO Meta Tags -->
-<meta name="description" content="Explore the Doppelganger Blog – learn what a doppelganger is, how face-matching works, privacy details, and why Doppelganger.world is the best source for finding your real look-alike." />
-<meta name="keywords" content="doppelganger, look alike finder, face match blog, doppelganger meaning, how doppelganger search works, facial similarity, AI face match, Indian look alike search" />
-<meta name="author" content="Doppelganger.world" />
-
-<!-- Open Graph (Facebook, WhatsApp SEO) -->
-<meta property="og:title" content="Doppelganger Blog – Myths, Science & Real Look-Alike Stories" />
-<meta property="og:description" content="Your complete guide to understanding doppelgangers, face matching, privacy, and how our AI finds your look-alike." />
-<meta property="og:image" content="https://www.doppelganger.world/images/og-image.jpg" />
-<meta property="og:url" content="https://www.doppelganger.world/blog.html" />
-<meta property="og:type" content="website" />
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Doppelganger Blog – Real Look-Alike Insights" />
-<meta name="twitter:description" content="Learn everything about doppelgangers, face-matching science, AI accuracy, and privacy." />
-<meta name="twitter:image" content="https://www.doppelganger.world/images/og-image.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
+<!-- SEO Meta -->
+<meta name="description" content="Explore real doppelganger stories, scientific explanations, image upload guides, privacy insights, and unique features of Doppelganger.world.">
+<meta name="keywords" content="doppelganger, look alike search, face match, AI look alike, doppelganger stories, upload photo guide">
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f7f7f7;
-    }
-    header {
-        background: #000;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-    nav a {
-        color: #fff;
-        margin: 0 15px;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    .container {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 20px;
-    }
-    .blog-card {
-        background: #fff;
-        padding: 25px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        transition: 0.3s;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .blog-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-    .blog-card h2 {
-        margin: 0 0 10px;
-    }
-    a.read-more {
-        color: #0056ff;
-        text-decoration: none;
-        font-weight: bold;
-    }
+body {
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background:#08132A;
+  color:#fff;
+}
+
+/* HEADER */
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:#0D1B3A;
+}
+
+header h2 {
+  margin:0;
+  font-size:24px;
+}
+
+nav a {
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:16px;
+}
+
+nav a:hover {
+  color:#6bb8ff;
+}
+
+/* LAYOUT */
+.container {
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  display:flex;
+  gap:30px;
+}
+
+.blog-list {
+  width:70%;
+}
+
+/* BLOG CARDS */
+.card {
+  background:#0E1D3F;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:25px;
+  border:1px solid #1c2c52;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color:#4a6fff;
+}
+
+.card h2 {
+  margin-top:0;
+  font-size:26px;
+}
+
+.card p {
+  color:#cbd3e1;
+  line-height:1.5;
+}
+
+.card a {
+  color:#6bb8ff;
+  text-decoration:underline;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width:30%;
+}
+
+.sidebar-box {
+  background:#0E1D3F;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:25px;
+  border:1px solid #1c2c52;
+}
+
+.sidebar-box h3 { margin-top:0; }
+
+input[type=text] {
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:none;
+  margin-bottom:10px;
+}
+
+button {
+  width:100%;
+  padding:10px;
+  background:#5A8BFF;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+button:hover {
+  background:#3c6be8;
+}
+
+ul { padding-left:18px; }
+ul li { margin-bottom:8px; }
+
+/* FOOTER */
+footer {
+  text-align:center;
+  margin-top:40px;
+  padding:20px;
+  color:#7d8fac;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container {
+    flex-direction:column;
+  }
+  .blog-list, .sidebar {
+    width:100%;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Doppelganger Blog</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="AboutUs.html">About Us</a>
-    </nav>
+  <h2>Doppelganster</h2>
+
+  <!-- ✅ UPDATED NAVIGATION -->
+  <nav>
+    <a href="https://www.doppelganger.world/index.html">Home</a>
+    <a href="https://www.doppelganger.world/blog.html">Blog</a>
+    <a href="https://www.doppelganger.world/AboutUs.html">About Us</a>
+  </nav>
 </header>
 
 <div class="container">
 
-    <div class="blog-card">
-        <h2>What Is a Doppelganger?</h2>
-        <p>A complete explanation of the meaning, science, and origin of the term “doppelganger”.</p>
-        <a class="read-more" href="blog-doppelganger-meaning.html">Read More →</a>
+  <!-- BLOG LIST -->
+  <div class="blog-list">
+
+    <div class="card">
+      <h2>What Is a Doppelganger?</h2>
+      <p>A complete explanation of what a doppelganger means, its origin, and why people search for look-alikes online.</p>
+      <a href="what-is-doppelganger.html">Read More →</a>
     </div>
 
-    <div class="blog-card">
-        <h2>How Doppelganger Search Works</h2>
-        <p>Learn how AI face-matching finds your closest look-alike online.</p>
-        <a class="read-more" href="blog-how-search-works.html">Read More →</a>
+    <div class="card">
+      <h2>How Doppelganger Search Works</h2>
+      <p>Understand how AI face-matching compares features and finds your look-alike online.</p>
+      <a href="how-search-works.html">Read More →</a>
     </div>
 
-    <div class="blog-card">
-        <h2>Why Our Website Is Unique</h2>
-        <p>What makes Doppelganger.world stand out from other facial similarity platforms?</p>
-        <a class="read-more" href="blog-why-unique.html">Read More →</a>
+    <div class="card">
+      <h2>Why Our Website Is Unique</h2>
+      <p>Learn why Doppelganger.world is different from other look-alike platforms.</p>
+      <a href="why-unique.html">Read More →</a>
     </div>
 
-    <div class="blog-card">
-        <h2>How to Upload an Image</h2>
-        <p>Correct steps for uploading your image for accurate match results.</p>
-        <a class="read-more" href="blog-how-to-upload.html">Read More →</a>
+    <div class="card">
+      <h2>How to Upload an Image</h2>
+      <p>A simple step-by-step guide to upload your photo correctly for accurate results.</p>
+      <a href="how-to-upload.html">Read More →</a>
     </div>
 
-    <div class="blog-card">
-        <h2>Privacy Note</h2>
-        <p>How your uploaded images are processed and stored safely.</p>
-        <a class="read-more" href="blog-privacy.html">Read More →</a>
+    <div class="card">
+      <h2>Privacy Note</h2>
+      <p>Full transparency on how your uploaded images are stored, processed, and deleted safely.</p>
+      <a href="privacy-note.html">Read More →</a>
     </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-box">
+      <h3>Search Blogs</h3>
+      <input type="text" placeholder="Search any blog title...">
+      <button>Search</button>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="what-is-doppelganger.html">What Is a Doppelganger?</a></li>
+        <li><a href="how-to-upload.html">How to Upload Image</a></li>
+        <li><a href="why-unique.html">Why Our Website Is Unique</a></li>
+      </ul>
+    </div>
+
+  </div>
 
 </div>
+
+<footer>© 2025 Doppelganger.world — All Rights Reserved</footer>
 
 </body>
 </html>
