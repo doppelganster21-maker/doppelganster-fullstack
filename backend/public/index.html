@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Doppelgangster – Find Your Real-Life Look-Alike</title>
-  <meta name="description" content="Discover your doppelganger! Upload images, explore look-alikes, read real stories, and learn the science of facial similarities on Doppelganger.world.">
+  <meta name="description" content="Discover your doppelganger! Upload images, explore look-alikes, read real stories, and learn the science of facial similarities on Doppelgangster.world.">
   <link rel="canonical" href="https://www.doppelganger.world/">
 
   <style>
@@ -20,7 +20,7 @@
     }
 
     * {
-      box-sizing: border-box
+      box-sizing: border-box;
     }
 
     body {
@@ -42,100 +42,107 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 14px;
-      margin-bottom: 18px
+      padding: 12px 16px;
+      margin-bottom: 20px;
     }
 
     .brand {
       display: flex;
       gap: 12px;
-      align-items: center
+      align-items: center;
     }
 
     .logo {
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
       border-radius: 10px;
       background: linear-gradient(135deg, var(--accent), #06b6d4);
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      color: #021328
+      color: #021328;
+      font-size: 18px;
     }
 
     .title {
-      font-size: 20px;
-      font-weight: 700
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
     }
 
     nav a {
       color: var(--muted);
       text-decoration: none;
-      margin-left: 14px;
+      padding: 12px 10px; /* mobile-friendly touch target */
+      font-size: 16px;
+      border-radius: 6px;
+      display: inline-block;
     }
 
     nav a:hover {
       color: var(--accent);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .main {
       display: flex;
       flex-direction: column;
-      gap: 18px
+      gap: 20px;
     }
 
     .card {
       background: var(--card);
       border-radius: 12px;
-      padding: 14px;
-      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6)
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
     }
 
     .muted {
       color: var(--muted);
-      font-size: 13px
-    }
-
-    form .row {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 10px
-    }
-
-    label {
-      display: block;
-      font-size: 13px;
-      margin-bottom: 6px
+      font-size: 14px;
     }
 
     input,
     select {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.04);
       background: var(--glass);
       color: #75a4df;
-      outline: none
+      outline: none;
+      font-size: 14px;
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 14px;
+      padding: 12px 16px;
       border-radius: 10px;
       background: linear-gradient(90deg, var(--accent), #06b6d4);
       color: #021328;
       font-weight: 700;
       border: none;
-      cursor: pointer
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn.secondary {
+      background: var(--glass);
+      color: var(--muted);
+      font-weight: 500;
     }
 
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 16px;
-      align-items: start
+      align-items: start;
     }
 
     .tile {
@@ -148,7 +155,7 @@
     .tile img {
       width: 100%;
       height: 300px;
-      object-fit: cover
+      object-fit: cover;
     }
 
     .reward-label {
@@ -163,34 +170,19 @@
       font-size: 14px;
     }
 
-    .meta {
-      padding: 8px;
-      font-size: 16px
-    }
-
-    .meta b {
-      display: block
-    }
-
     .status {
-      font-size: 13px;
-      margin-top: 8px
-    }
-
-    .small {
-      font-size: 18px;
-      font-weight: 500;
-      color: var(--muted)
+      font-size: 14px;
+      margin-top: 8px;
     }
 
     .center {
-      text-align: center
+      text-align: center;
     }
 
     .search-bar {
       margin-bottom: 12px;
       width: 100%;
-      padding: 8px;
+      padding: 10px;
       border-radius: 6px;
       border: none;
       background: var(--glass);
@@ -200,35 +192,36 @@
     footer {
       background: var(--card);
       text-align: center;
-      padding: 10px;
-      font-size: 13px;
+      padding: 14px;
+      font-size: 14px;
       color: var(--muted);
       margin-top: 20px;
     }
 
     footer a {
       color: var(--muted);
-      margin: 0 6px;
+      margin: 0 8px;
       text-decoration: none;
+      padding: 8px 6px; /* mobile-friendly touch */
+      display: inline-block;
+      font-size: 14px;
     }
 
-    .pagination {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
+    footer a:hover {
+      color: var(--accent);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
     }
 
-    .btn.secondary {
-      background: var(--glass);
-      color: var(--muted);
-      font-weight: 500;
-    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-    select#currency {
-      padding: 4px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
+      nav a {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -244,19 +237,17 @@
         </div>
       </div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="AboutUs.html">About Us</a>
+        <a href="index.html" title="Home Page">Home</a>
+        <a href="blog.html" title="Read Latest Blog Posts">Blog</a>
+        <a href="AboutUs.html" title="About Us">About Us</a>
       </nav>
     </header>
 
-    <div class="small muted center">Find Your Doppelganster</div>
-    <div class="small muted center" style="margin-bottom: 20px;">
-      Browse photos, help people find look-alikes & earn rewards!
+    <div class="center muted" style="margin-bottom: 20px;">
+      Find Your Doppelganster – Browse photos, help people find look-alikes & earn rewards!
     </div>
 
     <main class="main">
-
       <!-- Upload Section -->
       <section class="card" id="uploadSection">
         <h2>Upload an Image</h2>
@@ -266,8 +257,8 @@
               <label for="name">Name</label>
               <input id="name" name="name" type="text" required />
             </div>
-            <div style="width:75px">
-              <label for="currency">Currency:</label>
+            <div style="width:80px">
+              <label for="currency">Currency</label>
               <select id="currency" name="currency">
                 <option value="₹">₹ INR</option>
                 <option value="$">$ USD</option>
@@ -285,12 +276,10 @@
             <input id="email" name="email" type="email" required />
           </div>
           <div style="margin-bottom:10px">
-            <label for="file">Choose image</label>
+            <label for="file">Choose Image</label>
             <input id="file" name="file" type="file" accept="image/*" required />
           </div>
-          <div class="row">
-            <button type="submit" class="btn">Submit</button>
-          </div>
+          <button type="submit" class="btn">Submit</button>
           <div id="status" class="status muted"></div>
         </form>
       </section>
@@ -303,7 +292,7 @@
           <p class="muted">
             Curious if someone looks just like you? Discover the science of facial similarities, read doppelgänger stories, and see how Doppelgangster connects people worldwide.
           </p>
-          <a href="blog.html" class="btn" style="margin-top:8px;" title="Read More About Doppelganger Stories">Read More About Doppelganger Stories</a>
+          <a href="blog.html" class="btn" title="Read More About Doppelganger Stories">Read More About Doppelganger Stories</a>
         </article>
       </section>
 
@@ -318,7 +307,6 @@
           <button id="nextPageBtn" class="btn secondary">Next Page</button>
         </div>
       </section>
-
     </main>
   </div>
 
@@ -330,11 +318,10 @@
   </footer>
 
   <script src="script.js"></script>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6E7PBHRN0P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-6E7PBHRN0P');
   </script>
