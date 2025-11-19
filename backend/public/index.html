@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Doppelganster</title>
+  <title>Doppelgangster – Find Your Real-Life Look-Alike</title>
+  <meta name="description" content="Discover your doppelganger! Upload images, explore look-alikes, read real stories, and learn the science of facial similarities on Doppelganger.world.">
+  <link rel="canonical" href="https://www.doppelganger.world/">
+
   <style>
     :root {
       --bg: #0f1724;
@@ -66,6 +69,16 @@
       font-weight: 700
     }
 
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 14px;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
     .main {
       display: flex;
       flex-direction: column;
@@ -89,7 +102,6 @@
       gap: 8px;
       margin-bottom: 10px
     }
-dir
 
     label {
       display: block;
@@ -143,7 +155,7 @@ dir
       position: absolute;
       bottom: 75px;
       left: 10px;
-      background: #1b0b39;;
+      background: #1b0b39;
       color: #a7a7a7;
       padding: 4px 8px;
       border-radius: 6px;
@@ -218,69 +230,25 @@ dir
       border-radius: 4px;
       border: 1px solid #ccc;
     }
-    header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
-  margin-bottom: 18px;
-}
-
-.brand {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent), #06b6d4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #021328;
-}
-
-.title {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  margin-left: 14px;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
   </style>
 </head>
 
 <body>
-   <div class="container">
-     <header>
-  <div class="brand">
-    <div class="logo">DG</div>
-    <div>
-<div class="title">  Doppelganger</div>
-  Discover doppelgänger myths, legends, and real-life stories.
-
-
-    </div>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="AboutUs.html">About Us</a>
- 
-  </nav>
-</header>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DG</div>
+        <div>
+          <h1 class="title">Doppelganger</h1>
+          <p>Discover doppelgänger myths, legends, and real-life stories.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="AboutUs.html">About Us</a>
+      </nav>
+    </header>
 
     <div class="small muted center">Find Your Doppelganster</div>
     <div class="small muted center" style="margin-bottom: 20px;">
@@ -291,7 +259,7 @@ nav a:hover {
 
       <!-- Upload Section -->
       <section class="card" id="uploadSection">
-        <h3>Upload an image</h3>
+        <h2>Upload an Image</h2>
         <form id="uploadForm" enctype="multipart/form-data" autocomplete="off">
           <div class="row">
             <div style="flex:1">
@@ -299,7 +267,6 @@ nav a:hover {
               <input id="name" name="name" type="text" required />
             </div>
             <div style="width:75px">
-
               <label for="currency">Currency:</label>
               <select id="currency" name="currency">
                 <option value="₹">₹ INR</option>
@@ -307,7 +274,6 @@ nav a:hover {
                 <option value="€">€ EUR</option>
                 <option value="£">£ GBP</option>
               </select>
-
             </div>
             <div style="width:140px">
               <label for="reward">Reward</label>
@@ -328,29 +294,22 @@ nav a:hover {
           <div id="status" class="status muted"></div>
         </form>
       </section>
- 
+
       <!-- Blog Section -->
       <section class="card" id="blogSection">
-        <h3>Latest Blog</h3>
+        <h2>Latest Blog</h2>
         <article style="margin-bottom: 16px;">
-          <!-- <h4 style="margin-bottom:6px;">DOPPELGANGSTER.WORLD Finding Your Doppelgänger</h4>
+          <h3>DOPPELGANGSTER.WORLD – Find Your Real-Life Doppelgänger</h3>
           <p class="muted">
-            Ever wondered if there's someone out there who looks just like you?
-            We explore the fascinating science behind facial similarities,
-            share fun stories, and explain how Doppelganster connects people worldwide.
-          </p> -->
-          <h4 style="margin-bottom:6px;">DOPPELGANGSTER.WORLD – Find Your Real-Life Doppelgänger</h4>
-<p class="muted">
-  Curious if someone looks just like you? Discover the science of facial similarities, read doppelgänger stories, and see how Doppelgangster connects people worldwide.
-</p>
-
-          <a href="blog.html" class="btn" style="margin-top:8px;">Read More</a>
+            Curious if someone looks just like you? Discover the science of facial similarities, read doppelgänger stories, and see how Doppelgangster connects people worldwide.
+          </p>
+          <a href="blog.html" class="btn" style="margin-top:8px;" title="Read More About Doppelganger Stories">Read More About Doppelganger Stories</a>
         </article>
       </section>
 
       <!-- Gallery Section -->
       <section class="card" id="gallerySection">
-        <h3>Gallery</h3>
+        <h2>Gallery</h2>
         <input id="searchInput" class="search-bar" type="text" placeholder="Search by name..." />
         <div id="galleryGrid" class="gallery"></div>
         <div id="emptyMsg" class="center muted small">No images yet.</div>
@@ -364,22 +323,21 @@ nav a:hover {
   </div>
 
   <footer>
-    <a href="privacy.html">Privacy Policy</a>|
-    <a href="Term&condtion.html">Terms & Conditions</a>|
-    <a href="AboutUs.html">About Us</a>|
-    <a href="https://www.linkedin.com/in/javawithumesh" target="_blank">Developed by Umesh Jonwal</a>
+    <a href="privacy.html" title="Privacy Policy">Privacy Policy</a>|
+    <a href="Term%26condtion.html" title="Terms & Conditions">Terms & Conditions</a>|
+    <a href="AboutUs.html" title="About Us">About Us</a>|
+    <a href="https://www.linkedin.com/in/javawithumesh" target="_blank" title="Developed by Umesh Jonwal">Developed by Umesh Jonwal</a>
   </footer>
 
   <script src="script.js"></script>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6E7PBHRN0P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6E7PBHRN0P');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6E7PBHRN0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6E7PBHRN0P');
+  </script>
 </body>
 
 </html>
