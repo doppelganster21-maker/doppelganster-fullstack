@@ -1,5 +1,6 @@
 # robots.txt for doppelganger.world
 
+# General rules for all search engines
 User-agent: *
 Disallow: /admin/
 Disallow: /private/
@@ -11,10 +12,12 @@ Allow: /blog.html
 Allow: /AboutUs.html
 Allow: /gallery.html
 Allow: /privacy.html
-Allow: /Term&condtion.html
+Allow: /Term%26condtion.html   # & is URL-encoded
 
+# Sitemap location
 Sitemap: https://www.doppelganger.world/sitemap.xml
 
+# Specific rules for Googlebot
 User-agent: Googlebot
 Disallow: /admin/
 Disallow: /private/
