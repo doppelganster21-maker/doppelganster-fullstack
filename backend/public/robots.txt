@@ -19,17 +19,7 @@ Disallow: /server/
 Disallow: /upload.html
 
 # Allow all public pages
-Allow: /index.html
-Allow: /blog.html
-Allow: /AboutUs.html
-Allow: /gallery.html
-Allow: /privacy.html
-Allow: /Term%26condtion.html
 Allow: /
-
-# Prevent endless crawling of query parameters
-Disallow: /*?*
-Disallow: /*&*
 
 # ---------- GOOGLEBOT SPECIFIC ----------
 User-agent: Googlebot
