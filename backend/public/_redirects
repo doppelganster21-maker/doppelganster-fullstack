@@ -1,8 +1,9 @@
-# Pretty URLs for your pages
-/blog      /blog.html       200
-/privacy   /privacy.html    200
-/about     /AboutUs.html    200
-/terms     /Term&condtion.html   200
+# Pretty URLs → Actual Files
+/blog       /blog.html              200
+/privacy    /privacy.html           200
+/about      /AboutUs.html           200
+/terms      /Term%26condtion.html   200
 
-# Optional: SPA-style fallback for any other deep links
-/*         /index.html      200
+# Optional Fallback (for any unknown path)
+# Useful for SPA-style or to avoid 404 errors
+/*          /index.html             200
