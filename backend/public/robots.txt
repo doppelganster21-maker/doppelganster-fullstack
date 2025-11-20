@@ -1,40 +1,51 @@
 # ============================
 # robots.txt — doppelganger.world
-# Fully optimized for SEO, crawling & indexing
+# Fully SEO-optimized & Google-safe
 # ============================
 
-# ---------- GLOBAL RULES ----------
 User-agent: *
-# Block sensitive or internal directories
+
+# Block sensitive/internal system folders
 Disallow: /admin/
 Disallow: /private/
-Disallow: /scripts/
 Disallow: /config/
 Disallow: /temp/
 Disallow: /test/
 Disallow: /backup/
 Disallow: /server/
 
-# Pages that should not appear in search results
+# Block only pages NOT meant for indexing
 Disallow: /upload.html
 
-# Allow all public pages
+# Allow JS & CSS for full rendering
+Allow: /*.js$
+Allow: /*.css$
+
+# Allow ALL public pages
 Allow: /
 
-# ---------- GOOGLEBOT SPECIFIC ----------
+# DO NOT BLOCK URL PARAMETERS — REMOVED
+# (Blocking them can accidentally block the entire site)
+
+
+# ---------- Googlebot ----------
 User-agent: Googlebot
 Disallow: /admin/
 Disallow: /private/
-Disallow: /scripts/
 Disallow: /config/
 Disallow: /upload.html
+
+Allow: /*.js$
+Allow: /*.css$
 Allow: /
 
-# ---------- IMAGE CRAWLING (Googlebot-Image) ----------
+
+# ---------- Googlebot-Image ----------
 User-agent: Googlebot-Image
 Allow: /images/
 Allow: /uploads/
 Allow: /
 
-# ---------- SITEMAP ----------
+
+# ---------- Sitemap ----------
 Sitemap: https://www.doppelganger.world/sitemap.xml
