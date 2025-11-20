@@ -1,14 +1,5 @@
-# Serve robots.txt correctly
-/robots.txt       /robots.txt             200
-
-# Serve sitemap correctly
-/sitemap.xml      /sitemap.xml            200
-
-# Pretty URLs → Actual Files
-/blog             /blog.html              200
-/privacy          /privacy.html           200
-/about            /AboutUs.html           200
-/terms            /Term%26condtion.html   200
-
-# SPA fallback (MUST be last!)
-/*                /index.html             200
+/blog       /blog.html              200
+/about      /AboutUs.html           200
+/privacy    /privacy.html           200
+/terms      /Term%26condtion.html   200
+/*          /index.html             200
