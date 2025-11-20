@@ -1,89 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+# ============================
+# robots.txt — doppelganger.world
+# Optimized for SEO & Google crawling
+# ============================
 
-  <!-- Home -->
-  <url>
-    <loc>https://www.doppelganger.world/</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.00</priority>
-  </url>
+# ---------- GLOBAL RULES ----------
+User-agent: *
+# Block sensitive or internal folders
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /temp/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /server/
 
-  <!-- Blog Index Page -->
-  <url>
-    <loc>https://www.doppelganger.world/blog.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
+# Allow JS/CSS (IMPORTANT for indexing)
+Allow: /*.js$
+Allow: /*.css$
 
-  <!-- Blog Articles -->
-  <url>
-    <loc>https://www.doppelganger.world/blog1.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
+# Block pages that should not appear in search
+Disallow: /upload.html
 
-  <url>
-    <loc>https://www.doppelganger.world/blog2.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
+# Allow all public-facing pages
+Allow: /
 
-  <url>
-    <loc>https://www.doppelganger.world/blog3.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
+# Prevent endless parameter crawling
+Disallow: /*?*
+Disallow: /*&*
 
-  <url>
-    <loc>https://www.doppelganger.world/blog4.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
+# ---------- GOOGLEBOT ----------
+User-agent: Googlebot
+# Block private folders
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /upload.html
 
-  <!-- How to Upload -->
-  <url>
-    <loc>https://www.doppelganger.world/how-to-upload.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
+# Allow full rendering
+Allow: /*.js$
+Allow: /*.css$
+Allow: /
 
-  <!-- About Us -->
-  <url>
-    <loc>https://www.doppelganger.world/AboutUs.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.60</priority>
-  </url>
+# ---------- GOOGLEBOT-IMAGE ----------
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /uploads/
+Allow: /
 
-  <!-- Privacy Policy -->
-  <url>
-    <loc>https://www.doppelganger.world/privacy.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <!-- Terms & Conditions -->
-  <url>
-    <loc>https://www.doppelganger.world/Term%26condtion.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <!-- Gallery -->
-  <url>
-    <loc>https://www.doppelganger.world/gallery.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-</urlset>
+# ---------- SITEMAP ----------
+Sitemap: https://www.doppelganger.world/sitemap.xml
