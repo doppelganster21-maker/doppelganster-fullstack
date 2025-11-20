@@ -1,40 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Home -->
   <url>
     <loc>https://www.doppelganger.world/</loc>
-    <lastmod>2025-09-16</lastmod>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
-  <!-- Blog -->
+  <!-- Blog Index Page -->
   <url>
-    <loc>https://www.doppelganger.world/blog</loc>
-    <lastmod>2025-09-16</lastmod>
+    <loc>https://www.doppelganger.world/blog.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://www.doppelganger.world/blog1.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- Blog Pages -->
-  <url>
-    <loc>https://www.doppelganger.world/blog1.html</loc>
-    <lastmod>2025-09-16</lastmod>
-    <priority>0.80</priority>
-  </url>
   <url>
     <loc>https://www.doppelganger.world/blog2.html</loc>
-    <lastmod>2025-09-16</lastmod>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+
   <url>
     <loc>https://www.doppelganger.world/blog3.html</loc>
-    <lastmod>2025-09-16</lastmod>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.doppelganger.world/blog4.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- How to Upload -->
+  <url>
+    <loc>https://www.doppelganger.world/how-to-upload.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 
   <!-- About Us -->
   <url>
-    <loc>https://www.doppelganger.world/aboutus</loc>
-    <lastmod>2025-09-16</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.doppelganger.world/AboutUs.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
   </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.doppelganger.world/privacy.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Terms & Conditions -->
+  <url>
+    <loc>https://www.doppelganger.world/Term%26condtion.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://www.doppelganger.world/gallery.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
 </urlset>
