@@ -1,5 +1,8 @@
+# Pretty URLs → actual files
 /blog       /blog.html              200
 /about      /AboutUs.html           200
 /privacy    /privacy.html           200
 /terms      /Term%26condtion.html   200
+
+# SPA fallback (optional)
 /*          /index.html             200
