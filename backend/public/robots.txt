@@ -1,8 +1,8 @@
 # robots.txt — doppelganger.world
-# Fully fixed for Google indexing
+# Fully Google-safe, allows pretty URLs
 
 User-agent: *
-# Block only sensitive folders, not public pages
+# Block only sensitive/internal folders
 Disallow: /admin/
 Disallow: /private/
 Disallow: /config/
@@ -14,7 +14,7 @@ Disallow: /server/
 # Block pages not meant for search
 Disallow: /upload.html
 
-# Allow all main public URLs and pretty URLs
+# Allow all public pages and pretty URLs
 Allow: /$
 Allow: /index.html
 Allow: /blog
@@ -28,7 +28,7 @@ Allow: /privacy.html
 Allow: /terms
 Allow: /Term%26condtion.html
 
-# Allow JS, CSS & images for rendering
+# Allow JS, CSS, and images
 Allow: /*.js
 Allow: /*.css
 Allow: /images/
