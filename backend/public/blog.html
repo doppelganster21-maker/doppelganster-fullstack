@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -239,21 +240,62 @@ footer {
     </div>
 
     <div class="sidebar-box">
-      <h3>Recent Posts</h3>
-      <ul>
-        <li><a href="blog6.html">How to Find Your Doppelganger Online</a></li>
-        <li><a href="blog5.html">Why Do Doppelgangers Exist?</a></li>
-        <li><a href="blog9.html">What Does “Doppelgangster” Mean?</a></li>
-        <li><a href="blog8.html">What Is a Twin Stranger?</a></li>
-        <li><a href="blog1.html">What Is a Doppelganger?</a></li>
-      </ul>
-    </div>
+  <h3>Recent Posts</h3>
+  <ul>
+    <li><a href="blog11.html">Doppelgängers & Human Identity</a></li>
+    <li><a href="blog10.html">Doppelganger Finder Tips & Global Search</a></li>
+    <li><a href="blog9.html">Doppelganger by Naomi Klein – Critical Overview</a></li>
+    <li><a href="blog7.html">Doppelganger Movies: Fiction Meets Reality</a></li>
+    <li><a href="blog6.html">Twin Strangers & Celebrity Doppelgangers</a></li>
+  </ul>
+</div>
+
 
   </div>
 
 </div>
 
 <footer>© 2025 Doppelganger.world — All Rights Reserved</footer>
+<script>
+function filterBlogs() {
+const input = document.getElementById('searchInput').value.toLowerCase();
+const cards = document.querySelectorAll('.card');
 
+
+cards.forEach(card => {
+const title = card.querySelector('h2').innerText.toLowerCase();
+const content = card.querySelector('p').innerText.toLowerCase();
+
+
+if (title.includes(input) || content.includes(input)) {
+card.style.display = "block";
+} else {
+card.style.display = "none";
+}
+});
+}
+</script>
+<script>
+// Search Functionality Added Without Changing Existing HTML
+(function(){
+const searchBox = document.querySelector('.sidebar-box input');
+const searchBtn = document.querySelector('.sidebar-box button');
+const cards = document.querySelectorAll('.card');
+
+
+function filterBlogs() {
+const query = searchBox.value.toLowerCase();
+cards.forEach(card => {
+const title = card.querySelector('h2').innerText.toLowerCase();
+const text = card.querySelector('p').innerText.toLowerCase();
+card.style.display = (title.includes(query) || text.includes(query)) ? 'block' : 'none';
+});
+}
+
+
+searchBox.addEventListener('keyup', filterBlogs);
+searchBtn.addEventListener('click', filterBlogs);
+})();
+</script>
 </body>
 </html>
