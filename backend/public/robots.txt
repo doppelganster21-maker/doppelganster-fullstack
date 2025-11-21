@@ -1,6 +1,11 @@
+# ============================
+# robots.txt — doppelganger.world
+# SEO Optimized for Maximum Indexing
+# ============================
+
 User-agent: *
 
-# Block only sensitive folders
+# Block only sensitive or backend areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /config/
@@ -9,16 +14,13 @@ Disallow: /test/
 Disallow: /backup/
 Disallow: /server/
 Disallow: /node_modules/
-Disallow: /.env
 
-# Block non-SEO page
+# Block pages NOT meant for search
 Disallow: /upload.html
 
-# ✅ Allow all important public pages
-Allow: /$
+# ✅ Allow all important pages
+Allow: /
 Allow: /index.html
-
-# Blog main + all blog posts
 Allow: /blog
 Allow: /blog.html
 Allow: /blog1.html
@@ -32,22 +34,20 @@ Allow: /blog8.html
 Allow: /blog9.html
 Allow: /blog10.html
 Allow: /blog11.html
-
-# Other pages
 Allow: /about
 Allow: /AboutUs.html
+Allow: /gallery
+Allow: /gallery.html
 Allow: /privacy
 Allow: /privacy.html
 Allow: /terms
 Allow: /Term%26condtion.html
-Allow: /gallery
-Allow: /gallery.html
 
-# Allow assets
-Allow: /*.js
+# ✅ Allow static assets
 Allow: /*.css
+Allow: /*.js
 Allow: /images/
 Allow: /uploads/
 
-# Sitemap
+# ✅ Sitemap location
 Sitemap: https://www.doppelganger.world/sitemap.xml
