@@ -2,7 +2,7 @@
 # Fully Google-safe, allows pretty URLs
 
 User-agent: *
-# Block only sensitive/internal folders
+# Block sensitive/internal folders
 Disallow: /admin/
 Disallow: /private/
 Disallow: /config/
@@ -28,7 +28,7 @@ Allow: /privacy.html
 Allow: /terms
 Allow: /Term%26condtion.html
 
-# Allow JS, CSS, and images
+# Allow assets
 Allow: /*.js
 Allow: /*.css
 Allow: /images/
