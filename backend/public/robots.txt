@@ -1,4 +1,5 @@
 User-agent: *
+
 # Block only sensitive folders
 Disallow: /admin/
 Disallow: /private/
@@ -7,23 +8,40 @@ Disallow: /temp/
 Disallow: /test/
 Disallow: /backup/
 Disallow: /server/
+Disallow: /node_modules/
+Disallow: /.env
 
-# Block pages not meant for search
+# Block non-SEO page
 Disallow: /upload.html
 
-# Allow main pages
+# ✅ Allow all important public pages
 Allow: /$
 Allow: /index.html
+
+# Blog main + all blog posts
 Allow: /blog
 Allow: /blog.html
+Allow: /blog1.html
+Allow: /blog2.html
+Allow: /blog3.html
+Allow: /blog4.html
+Allow: /blog5.html
+Allow: /blog6.html
+Allow: /blog7.html
+Allow: /blog8.html
+Allow: /blog9.html
+Allow: /blog10.html
+Allow: /blog11.html
+
+# Other pages
 Allow: /about
 Allow: /AboutUs.html
-Allow: /gallery
-Allow: /gallery.html
 Allow: /privacy
 Allow: /privacy.html
 Allow: /terms
 Allow: /Term%26condtion.html
+Allow: /gallery
+Allow: /gallery.html
 
 # Allow assets
 Allow: /*.js
