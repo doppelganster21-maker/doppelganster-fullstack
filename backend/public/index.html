@@ -26,6 +26,7 @@
 
     .container {
       max-width: 600px;
+      width: 100%;
     }
 
     h1 {
@@ -47,26 +48,37 @@
       font-size: 24px;
       margin-bottom: 30px;
       animation: fadeIn 3s ease-in-out;
+      flex-wrap: wrap; /* Wrap items on smaller screens */
     }
 
     .countdown div {
       background: rgba(255, 255, 255, 0.1);
       padding: 15px 20px;
       border-radius: 8px;
+      min-width: 90px;
+      margin-bottom: 10px;
+    }
+
+    .subscribe {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .subscribe input {
       padding: 10px 15px;
       border: none;
-      border-radius: 5px 0 0 5px;
+      border-radius: 5px;
       outline: none;
       font-size: 16px;
+      flex: 1 1 200px;
     }
 
     .subscribe button {
       padding: 10px 20px;
       border: none;
-      border-radius: 0 5px 5px 0;
+      border-radius: 5px;
       background: #ff6b6b;
       color: #fff;
       font-size: 16px;
@@ -88,6 +100,23 @@
       font-size: 14px;
       color: rgba(255,255,255,0.7);
     }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .countdown {
+        font-size: 18px;
+      }
+      .subscribe input, .subscribe button {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -95,7 +124,7 @@
     <h1>We'll Be Back Soon!</h1>
     <p>Our website is currently undergoing scheduled maintenance.</p>
 
-    <!-- Optional Countdown -->
+    <!-- Countdown Timer -->
     <div class="countdown" id="countdown">
       <div><span id="days">00</span> Days</div>
       <div><span id="hours">00</span> Hours</div>
@@ -103,7 +132,7 @@
       <div><span id="seconds">00</span> Seconds</div>
     </div>
 
-    <!-- Optional Email Subscribe -->
+    <!-- Email Subscribe -->
     <div class="subscribe">
       <input type="email" placeholder="Enter your email">
       <button>Notify Me</button>
@@ -111,31 +140,31 @@
 
     <footer>&copy; 2025 Your Website Name. All rights reserved.</footer>
   </div>
- 
-<script>
-  // Countdown Timer for 2 days from now
-  const now = new Date().getTime();
-  const countdownDate = now + 2 * 24 * 60 * 60 * 1000; // 2 days in milliseconds
 
-  const countdownFunction = setInterval(() => {
+  <script>
+    // Countdown Timer for 2 days from now
     const now = new Date().getTime();
-    const distance = countdownDate - now;
+    const countdownDate = now + 2 * 24 * 60 * 60 * 1000; // 2 days in milliseconds
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const countdownFunction = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
 
-    document.getElementById("days").innerText = days.toString().padStart(2, '0');
-    document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-    document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-    document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if(distance < 0){
-      clearInterval(countdownFunction);
-      document.getElementById("countdown").innerHTML = "We're Live!";
-    }
-  }, 1000);
-</script>    
+      document.getElementById("days").innerText = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+      if(distance < 0){
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").innerHTML = "We're Live!";
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
